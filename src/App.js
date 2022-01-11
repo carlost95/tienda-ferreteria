@@ -1,9 +1,11 @@
-import { NavBar } from "./components/menu_navbar/menu";
+import { NavBar } from "./components/navbar/navbar";
 
 export const App = ()=> {
   return (
     <div className="App">
-      <NavBar />
+      <NavBar/>
     </div>
   );
 }
+
+export default App;

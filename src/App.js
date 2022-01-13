@@ -4,7 +4,7 @@ import {ItemListContainer} from './components/itemListContainer/itemListContaine
 export const App = ()=> {
   return (
     <div className="App">
-      <NavBar/>
+      <NavBar />
       <ItemListContainer greeting="Este es nuestro Listing"/>
     </div>
   );

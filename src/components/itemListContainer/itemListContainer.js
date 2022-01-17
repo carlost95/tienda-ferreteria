@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import { ItemCount } from '../itemCount/ItemCount';
-// import { ItemList } from '../itemsList/itemList';
+import { ItemList } from '../itemsList/ItemList';
 
 export const ItemListContainer = ({ greeting }) => {
 	const [ products, setProducts ] = useState([]);
 
 	const getProductFetch = async () => {
-		const productsApi = await fetch('https://franncode.vercel.app/api/products');
+		const productsApi = await fetch('https://fakestoreapi.com/products');
 		const productJson = await productsApi.json();
 		setProducts(productJson);
 	};
@@ -19,7 +19,7 @@ export const ItemListContainer = ({ greeting }) => {
 		<div>
 			<h2>{greeting}</h2>
 			<ItemCount stock={15} initial={1} />
-			{/* <ItemList products={products} /> */}
+			<ItemList products={products} />
 		</div>
 	);
 };

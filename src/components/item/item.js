@@ -1,5 +1,16 @@
-export const Item = ({product}) => {
-    return (
-    <h1>items</h1>
+export const Item = ({
+                      category,
+                      description,
+                      image,
+                      price,
+                      title}) => {
+  return (
+    <div>
+      <h1>{title}</h1>
+      <img src={image} />
+      <p>{description}</p>
+      <p>{category}</p>
+      <p>{price}</p>
+    </div>
     );
   }

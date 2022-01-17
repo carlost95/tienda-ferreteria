@@ -1,4 +1,4 @@
-import { CartWidget } from "../cartWidget/cartWidget";
+import { CartWidget } from "../cartWidget/CartWidget";
 
 export const NavBar = () => {
     return (

@@ -1,12 +1,13 @@
-import { Item } from '../item/Item';
+import { Item } from "../item/Item";
 
 export const ItemList = ({ products }) => {
-
-    return (
+  return (
     <div>
-          {products ? (products.map((prod) => <Item {...prod} />)) : (
-            <p> cargando....</p>
-          )}
+      {products ? (
+        products.map((prod) => <Item {...prod} />)
+      ) : (
+        <p> cargando....</p>
+      )}
     </div>
-    );
-}
+  );
+};

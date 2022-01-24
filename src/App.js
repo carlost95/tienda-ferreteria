@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { ItemListContainer } from "./components/itemListContainer/itemListContainer";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { ItemListContainer } from "./components/itemListContainer";
 import { NavBar } from "./components/navbar/navbar";
 
 export const App = () => {

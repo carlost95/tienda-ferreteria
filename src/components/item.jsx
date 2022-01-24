@@ -1,4 +1,4 @@
-import { ItemDetail } from "../itemDetail/itemDetail";
+import { ItemDetail } from "./itemDetailContainer";
 export const Item = ({ category, description, image, price, title }) => {
   return (
     <div>

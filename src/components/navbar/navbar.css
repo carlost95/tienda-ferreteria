@@ -1,0 +1,20 @@
+.cartLocation {
+  background: rgb(235, 142, 158) !important;
+  background: linear-gradient(
+    90deg,
+    rgba(36, 11, 54, 1) 10%,
+    rgba(195, 20, 50, 1) 30%,
+    rgba(233, 45, 77, 1) 65%,
+    rgba(235, 142, 158, 1) 90%
+  ) !important;
+}
+.cartColor {
+  color: white !important;
+}
+
+.fontColor {
+  color: white !important;
+}
+.dropdown-toggle nav-link {
+  color: white;
+}

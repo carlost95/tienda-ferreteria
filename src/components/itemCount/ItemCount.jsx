@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Swal } from 'sweetalert2'
+
 
 export const ItemCount = ({ stock, initial }) => {
   const [count, setCount] = useState(initial);
@@ -18,7 +20,24 @@ export const ItemCount = ({ stock, initial }) => {
 
   const onAdd = () => {
     const message = `Agregaste ${count} producto`;
-    count === 1 ? alert(message) : alert(`${message}s`);
+    count === 1 ? (Swal.fire({
+      icon: "info",
+      title: "No se encontro producto seleccionado",
+      text: "Quieres Volver al Catalog de Productos",
+      showConfirmButton: false,
+      allowOutsideClick: false,
+      allowEscapeKey: false
+
+    })) : (
+      Swal.fire({
+        icon: "error",
+        title: "A ocurrido un error",
+        showConfirmButton: false,
+        allowOutsideClick: false,
+        allowEscapeKey: false
+
+      }))
+    // alert(message) : alert(`${message}s`);
   };
   return (
     <div>

@@ -1,7 +1,4 @@
-import { Fragment } from "react"
-import { ItemDetailContainer } from "../components/itemDetailContainer"
-import { ItemList } from "../components/itemList"
-import { ItemListContainer } from "../components/itemListContainer"
+import { ItemListContainer } from "./../components/itemListContainer/itemListContainer"
 
 export const Catalogo = () => {
     return (

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { ItemCount } from "./ItemCount";
-import { ItemList } from "./itemList";
+import { ItemCount } from "../itemCount/ItemCount";
+import { ItemList } from "../itemList/itemList";
 
 export const ItemListContainer = ({ greeting }) => {
   const [products, setProducts] = useState([]);
@@ -17,7 +17,7 @@ export const ItemListContainer = ({ greeting }) => {
   return (
     <div>
       <h2>{greeting}</h2>
-      <ItemCount stock={15} initial={1} />
+      {/* <ItemCount stock={15} initial={1} /> */}
       <ItemList products={products} />
     </div>
   );

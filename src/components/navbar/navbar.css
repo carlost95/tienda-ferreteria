@@ -1,16 +1,25 @@
-.cartLocation {
-  background: rgb(235, 142, 158) !important;
-  background: linear-gradient(
-    90deg,
-    rgba(36, 11, 54, 1) 10%,
-    rgba(195, 20, 50, 1) 30%,
-    rgba(233, 45, 77, 1) 65%,
-    rgba(235, 142, 158, 1) 90%
-  ) !important;
+.NavBar {
+  background: #3134359d !important;
 }
-.cartColor {
+.FormatText a {
+  text-decoration: none !important;
   color: white !important;
+  font-size: large;
 }
-.fontColor {
-  color: white !important;
+.FormatText a:hover {
+  color: rgba(238, 255, 6, 0.788) !important;
+  font-weight: bold;
+}
+.TextDropdown {
+  color: black !important;
+  background: #3134359d !important;
+}
+.ContainerNavbar {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  justify-content: space-around !important;
+}
+.dropdown-menu {
+  padding: 0;
 }

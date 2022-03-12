@@ -3,6 +3,7 @@ import { NavBar } from "./components/navbar/navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Catalogo } from "./pages/catalogo";
 import { Home } from "./pages/home/home";
+import { Footer } from "./components/footer/footer";
 
 export const App = () => {
   return (
@@ -17,7 +18,7 @@ export const App = () => {
             <Home />
           </Route>
         </Switch>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </div>
   );

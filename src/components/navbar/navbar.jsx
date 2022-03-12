@@ -1,20 +1,24 @@
 import { CartWidget } from "../cartWidget";
-import { NavLink } from "react-router-dom";
-
+import { NavLink, Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTools } from "@fortawesome/free-solid-svg-icons";
 import "./navbar.css";
-
 import { Navbar, NavDropdown, Container } from "react-bootstrap";
 
 export const NavBar = () => {
   return (
-    <div>
+    <>
       <Navbar bg="light" expand="lg" className="NavBar">
+        <Link className="FormatIconStore" to="/">
+          <FontAwesomeIcon icon={faTools} />
+          <p>Ferreteria</p>
+        </Link>
         <Container className="ContainerNavbar">
           <Navbar.Brand className="FormatText">
             <NavLink to="/">Home</NavLink>
           </Navbar.Brand>
           <Navbar.Brand className="FormatText">
-            <NavLink to="/catalogo">catalogo</NavLink>
+            <NavLink to="/catalogo">Catalogo</NavLink>
           </Navbar.Brand>
           <NavDropdown title="Categoria" className="FormatText">
             <NavDropdown.Item className="TextDropdown">Electronicos</NavDropdown.Item>
@@ -22,19 +26,10 @@ export const NavBar = () => {
             <NavDropdown.Item className="TextDropdown">Mujer</NavDropdown.Item>
           </NavDropdown>
         </Container>
+        <div className="Cart">
+          <CartWidget />
+        </div>
       </Navbar>
-      {/* <Navbar bg="light" expand="lg" className="cartLocation cartColor">
-        <Container >
-          <Navbar.Brand className="fontColor" >Tienda</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse>
-            <Nav className="me-auto">
-              <Nav.Link className="fontColor">Home</Nav.Link>
-              <Nav.Link className="fontColor">Link</Nav.Link>
-          </Navbar.Collapse>
-        </Container>
-        <CartWidget />
-      </Navbar> */}
-    </div >
+    </ >
   );
 };

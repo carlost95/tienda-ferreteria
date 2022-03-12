@@ -1,9 +1,7 @@
-import { Fragment } from "react";
 import { Item } from "../item/item";
 
 export const ItemList = ({ products }) => {
 
-  console.log("articulo-->", products);
   return (
     <>
       <h1 className="Titulo">Ferreteria</h1>

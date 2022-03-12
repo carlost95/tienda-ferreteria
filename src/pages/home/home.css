@@ -1,4 +1,13 @@
 .ContenedorHome {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem;
+  text-align: center;
+}
+.Titulo {
+  font-size: xx-large;
+  color: rgba(0, 0, 0, 0.582);
+  text-decoration: solid;
 }

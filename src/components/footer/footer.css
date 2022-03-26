@@ -6,7 +6,12 @@
   flex-direction: column;
   height: 6rem;
   width: 100%;
-  margin-bottom: 0%;
+  /* margin-bottom: 0%; */
+  position: fixed;
+  bottom: 0;
+  /* position: fixed;
+  bottom: 0; */
+  /* align-self: flex-end; */
 }
 
 .footer__redesSociales {

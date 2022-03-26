@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Catalogo } from "./pages/catalogo";
 import { Home } from "./pages/home/home";
 import { Footer } from "./components/footer/footer";
+import "./App.css";
 
 export const App = () => {
   return (
